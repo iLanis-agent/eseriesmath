@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-Series Math - app</title>
+<style>
+  :root { --accent:#6b6b3a; --ink:#26261a; --paper:#f7f6f1; --soft:#e9e7d8; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #c4c1a0; border-radius:6px; background:#fff; color:var(--ink); }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #c4c1a0; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#7a7860; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>E-Series Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page picks standard resistor values from the number you type: the nearest E24 and E96 single values, the closest E24 series pair, and the closest E24 parallel pair, each with the signed error against your target. The target is yours; the tables are the published E24 and E96 base values across seven decades. It does not know the tolerance, the power rating, the temperature drift or the availability of any actual part, and it gives no verdict that a picked value suits your circuit. Every number here is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The nearest truth</h2>
+    <p class="note">The closest single standard value, in both series.</p>
+    <label for="n-t">Target (Ω)</label><input id="n-t" type="text" value="276">
+    <div class="out" id="n-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The series truth</h2>
+    <p class="note">The closest you can land with two E24 values added in series.</p>
+    <label for="s-t">Target (Ω)</label><input id="s-t" type="text" value="276">
+    <div class="out" id="s-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The parallel truth</h2>
+    <p class="note">The closest you can land with two E24 values in parallel.</p>
+    <label for="p-t">Target (Ω)</label><input id="p-t" type="text" value="276">
+    <div class="out" id="p-out"></div>
+  </div>
+
+  <footer>E-Series Math is exact arithmetic over the number you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("n-out", () => nearestTruth(v("n-t")));
+    show("s-out", () => seriesTruth(v("s-t")));
+    show("p-out", () => parallelTruth(v("p-t")));
+  }
+  document.querySelectorAll("input").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
