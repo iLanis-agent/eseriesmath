@@ -1,0 +1,699 @@
+{
+ "cases": [
+  {
+   "fn": "nearest",
+   "args": [
+    "276"
+   ],
+   "expect": "The nearest E24 value to 276 Ω is 270 Ω, 2.17 % low; the nearest E96 is 274 Ω, 0.72 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "276"
+   ],
+   "expect": "Two E24 values in series come closest with 36 Ω + 240 Ω, landing at 276 Ω, exact."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "276"
+   ],
+   "expect": "Two E24 values in parallel come closest with 300 Ω and 3600 Ω, giving 276.92 Ω, 0.33 % high of 276 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "5584329.46"
+   ],
+   "expect": "The nearest E24 value to 5584329.46 Ω is 5600000 Ω, 0.28 % high; the nearest E96 is 5620000 Ω, 0.64 % high."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "5584329.46"
+   ],
+   "expect": "Two E24 values in series come closest with 470000 Ω + 5100000 Ω, landing at 5570000 Ω, 0.26 % low of 5584329.46 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "5584329.46"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 18.52 % low of 5584329.46 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "66329771.47"
+   ],
+   "expect": "The nearest E24 value to 66329771.47 Ω is 9100000 Ω, 86.28 % low; the nearest E96 is 9760000 Ω, 85.29 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "66329771.47"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 72.56 % low of 66329771.47 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "66329771.47"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 93.14 % low of 66329771.47 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "42939631.16"
+   ],
+   "expect": "The nearest E24 value to 42939631.16 Ω is 9100000 Ω, 78.81 % low; the nearest E96 is 9760000 Ω, 77.27 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "42939631.16"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 57.61 % low of 42939631.16 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "42939631.16"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 89.4 % low of 42939631.16 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "8321351.98"
+   ],
+   "expect": "The nearest E24 value to 8321351.98 Ω is 8200000 Ω, 1.46 % low; the nearest E96 is 8250000 Ω, 0.86 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "8321351.98"
+   ],
+   "expect": "Two E24 values in series come closest with 120000 Ω + 8200000 Ω, landing at 8320000 Ω, 0.02 % low of 8321351.98 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "8321351.98"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 45.32 % low of 8321351.98 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "23608857.95"
+   ],
+   "expect": "The nearest E24 value to 23608857.95 Ω is 9100000 Ω, 61.46 % low; the nearest E96 is 9760000 Ω, 58.66 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "23608857.95"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 22.91 % low of 23608857.95 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "23608857.95"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 80.73 % low of 23608857.95 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "86829209.64"
+   ],
+   "expect": "The nearest E24 value to 86829209.64 Ω is 9100000 Ω, 89.52 % low; the nearest E96 is 9760000 Ω, 88.76 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "86829209.64"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 79.04 % low of 86829209.64 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "86829209.64"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 94.76 % low of 86829209.64 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "47096617.63"
+   ],
+   "expect": "The nearest E24 value to 47096617.63 Ω is 9100000 Ω, 80.68 % low; the nearest E96 is 9760000 Ω, 79.28 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "47096617.63"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 61.36 % low of 47096617.63 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "47096617.63"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 90.34 % low of 47096617.63 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "94340077"
+   ],
+   "expect": "The nearest E24 value to 94340077 Ω is 9100000 Ω, 90.35 % low; the nearest E96 is 9760000 Ω, 89.65 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "94340077"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 80.71 % low of 94340077 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "94340077"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 95.18 % low of 94340077 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "49066726.83"
+   ],
+   "expect": "The nearest E24 value to 49066726.83 Ω is 9100000 Ω, 81.45 % low; the nearest E96 is 9760000 Ω, 80.11 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "49066726.83"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 62.91 % low of 49066726.83 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "49066726.83"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 90.73 % low of 49066726.83 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "77079622.54"
+   ],
+   "expect": "The nearest E24 value to 77079622.54 Ω is 9100000 Ω, 88.19 % low; the nearest E96 is 9760000 Ω, 87.34 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "77079622.54"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 76.39 % low of 77079622.54 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "77079622.54"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 94.1 % low of 77079622.54 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "99519049.56"
+   ],
+   "expect": "The nearest E24 value to 99519049.56 Ω is 9100000 Ω, 90.86 % low; the nearest E96 is 9760000 Ω, 90.19 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "99519049.56"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 81.71 % low of 99519049.56 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "99519049.56"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 95.43 % low of 99519049.56 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "91697818.28"
+   ],
+   "expect": "The nearest E24 value to 91697818.28 Ω is 9100000 Ω, 90.08 % low; the nearest E96 is 9760000 Ω, 89.36 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "91697818.28"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 80.15 % low of 91697818.28 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "91697818.28"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 95.04 % low of 91697818.28 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "38768839.96"
+   ],
+   "expect": "The nearest E24 value to 38768839.96 Ω is 9100000 Ω, 76.53 % low; the nearest E96 is 9760000 Ω, 74.83 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "38768839.96"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 53.06 % low of 38768839.96 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "38768839.96"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 88.26 % low of 38768839.96 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "48100802.74"
+   ],
+   "expect": "The nearest E24 value to 48100802.74 Ω is 9100000 Ω, 81.08 % low; the nearest E96 is 9760000 Ω, 79.71 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "48100802.74"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 62.16 % low of 48100802.74 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "48100802.74"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 90.54 % low of 48100802.74 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "24160324.93"
+   ],
+   "expect": "The nearest E24 value to 24160324.93 Ω is 9100000 Ω, 62.33 % low; the nearest E96 is 9760000 Ω, 59.6 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "24160324.93"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 24.67 % low of 24160324.93 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "24160324.93"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 81.17 % low of 24160324.93 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "90049829.29"
+   ],
+   "expect": "The nearest E24 value to 90049829.29 Ω is 9100000 Ω, 89.89 % low; the nearest E96 is 9760000 Ω, 89.16 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "90049829.29"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 79.79 % low of 90049829.29 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "90049829.29"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 94.95 % low of 90049829.29 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "70811892.36"
+   ],
+   "expect": "The nearest E24 value to 70811892.36 Ω is 9100000 Ω, 87.15 % low; the nearest E96 is 9760000 Ω, 86.22 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "70811892.36"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 74.3 % low of 70811892.36 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "70811892.36"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 93.57 % low of 70811892.36 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "82088788.76"
+   ],
+   "expect": "The nearest E24 value to 82088788.76 Ω is 9100000 Ω, 88.91 % low; the nearest E96 is 9760000 Ω, 88.11 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "82088788.76"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 77.83 % low of 82088788.76 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "82088788.76"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 94.46 % low of 82088788.76 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "61648498.46"
+   ],
+   "expect": "The nearest E24 value to 61648498.46 Ω is 9100000 Ω, 85.24 % low; the nearest E96 is 9760000 Ω, 84.17 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "61648498.46"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 70.48 % low of 61648498.46 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "61648498.46"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 92.62 % low of 61648498.46 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "48210857.75"
+   ],
+   "expect": "The nearest E24 value to 48210857.75 Ω is 9100000 Ω, 81.12 % low; the nearest E96 is 9760000 Ω, 79.76 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "48210857.75"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 62.25 % low of 48210857.75 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "48210857.75"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 90.56 % low of 48210857.75 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "6918278.75"
+   ],
+   "expect": "The nearest E24 value to 6918278.75 Ω is 6800000 Ω, 1.71 % low; the nearest E96 is 6980000 Ω, 0.89 % high."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "6918278.75"
+   ],
+   "expect": "Two E24 values in series come closest with 120000 Ω + 6800000 Ω, landing at 6920000 Ω, 0.02 % high of 6918278.75 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "6918278.75"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 34.23 % low of 6918278.75 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "44901670.03"
+   ],
+   "expect": "The nearest E24 value to 44901670.03 Ω is 9100000 Ω, 79.73 % low; the nearest E96 is 9760000 Ω, 78.26 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "44901670.03"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 59.47 % low of 44901670.03 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "44901670.03"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 89.87 % low of 44901670.03 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "98847532.44"
+   ],
+   "expect": "The nearest E24 value to 98847532.44 Ω is 9100000 Ω, 90.79 % low; the nearest E96 is 9760000 Ω, 90.13 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "98847532.44"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 81.59 % low of 98847532.44 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "98847532.44"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 95.4 % low of 98847532.44 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "65206410.81"
+   ],
+   "expect": "The nearest E24 value to 65206410.81 Ω is 9100000 Ω, 86.04 % low; the nearest E96 is 9760000 Ω, 85.03 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "65206410.81"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 72.09 % low of 65206410.81 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "65206410.81"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 93.02 % low of 65206410.81 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "42642071.52"
+   ],
+   "expect": "The nearest E24 value to 42642071.52 Ω is 9100000 Ω, 78.66 % low; the nearest E96 is 9760000 Ω, 77.11 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "42642071.52"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 57.32 % low of 42642071.52 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "42642071.52"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 89.33 % low of 42642071.52 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "38374455.93"
+   ],
+   "expect": "The nearest E24 value to 38374455.93 Ω is 9100000 Ω, 76.29 % low; the nearest E96 is 9760000 Ω, 74.57 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "38374455.93"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 52.57 % low of 38374455.93 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "38374455.93"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 88.14 % low of 38374455.93 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "64427160.01"
+   ],
+   "expect": "The nearest E24 value to 64427160.01 Ω is 9100000 Ω, 85.88 % low; the nearest E96 is 9760000 Ω, 84.85 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "64427160.01"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 71.75 % low of 64427160.01 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "64427160.01"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 92.94 % low of 64427160.01 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "86776103.13"
+   ],
+   "expect": "The nearest E24 value to 86776103.13 Ω is 9100000 Ω, 89.51 % low; the nearest E96 is 9760000 Ω, 88.75 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "86776103.13"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 79.03 % low of 86776103.13 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "86776103.13"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 94.76 % low of 86776103.13 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "7176158.43"
+   ],
+   "expect": "The nearest E24 value to 7176158.43 Ω is 7500000 Ω, 4.51 % high; the nearest E96 is 7150000 Ω, 0.36 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "7176158.43"
+   ],
+   "expect": "Two E24 values in series come closest with 390000 Ω + 6800000 Ω, landing at 7190000 Ω, 0.19 % high of 7176158.43 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "7176158.43"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 36.6 % low of 7176158.43 Ω."
+  },
+  {
+   "fn": "nearest",
+   "args": [
+    "67272625.54"
+   ],
+   "expect": "The nearest E24 value to 67272625.54 Ω is 9100000 Ω, 86.47 % low; the nearest E96 is 9760000 Ω, 85.49 % low."
+  },
+  {
+   "fn": "series",
+   "args": [
+    "67272625.54"
+   ],
+   "expect": "Two E24 values in series come closest with 9100000 Ω + 9100000 Ω, landing at 18200000 Ω, 72.95 % low of 67272625.54 Ω."
+  },
+  {
+   "fn": "parallel",
+   "args": [
+    "67272625.54"
+   ],
+   "expect": "Two E24 values in parallel come closest with 9100000 Ω and 9100000 Ω, giving 4550000 Ω, 93.24 % low of 67272625.54 Ω."
+  }
+ ],
+ "errors": [
+  [
+   "nearest",
+   [
+    "0"
+   ]
+  ],
+  [
+   "nearest",
+   [
+    "100000000.01"
+   ]
+  ],
+  [
+   "nearest",
+   [
+    "276.005"
+   ]
+  ],
+  [
+   "series",
+   [
+    "0"
+   ]
+  ],
+  [
+   "series",
+   [
+    "abc"
+   ]
+  ],
+  [
+   "parallel",
+   [
+    "-5"
+   ]
+  ],
+  [
+   "parallel",
+   [
+    "100000000.005"
+   ]
+  ]
+ ]
+}
